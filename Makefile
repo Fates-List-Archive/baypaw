@@ -1,3 +1,4 @@
-BIN_NAME = baypaw
-
-include common-mk/Makefile
+all:
+	cargo build --release
+run:
+	target/release/baypaw

@@ -16,6 +16,6 @@ actix-web = { version = "4.0.1", features = ["rustls"] }
 serenity = { version = "0.11.2", default-features = false, features = ["client", "gateway", "rustls_backend", "model", "http", "cache"] }
 log = "0.4.14"
 env_logger = "0.9.0"
-bristlefrost = { git = "https://github.com/Fates-List/bristlefrost" }
+bristlefrost = { git = "https://github.com/Fates-List-Archive/bristlefrost" }
 
 sqlx = { version = "0.5", features = [ "runtime-actix-rustls" , "postgres", "chrono", "uuid", "bigdecimal", "json"] }

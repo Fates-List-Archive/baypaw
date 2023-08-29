@@ -247,13 +247,13 @@ impl Database {
 
         let pool = PgPoolOptions::new()
             .max_connections(MAX_CONNECTIONS)
-            .connect("postgres://localhost/fateslist")
+            .connect("postgres:///fateslist")
             .await
             .expect("Could not initialize connection");
 
         info!("Connected to database");
 
-        let cfg = Config::from_url("redis://localhost:1001/1");
+        let cfg = Config::from_url("redis://localhost:6379/1");
         let path = match env::var_os("HOME") {
             None => {
                 panic!("$HOME not set");
